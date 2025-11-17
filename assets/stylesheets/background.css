@@ -1,0 +1,37 @@
+.md-container {
+    background: url('../images/KAGAYA.png') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.md-main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: calc(100vh - 64px);
+    padding: 0.3rem 0;
+}
+
+.md-main__inner {
+    background: rgba(255, 255, 255, 0.82);
+    backdrop-filter: blur(12px);
+    border-radius: 20px;
+
+    padding: 2.5rem 3rem;
+
+    width: 90%;
+    max-width: 1400px;
+
+    min-height: 85vh;
+    box-shadow: 0 6px 24px rgba(0,0,0,0.16);
+
+    box-sizing: border-box;
+}
+
+.md-nav__title,
+.md-nav__title::before {
+    display: none !important;
+}
+
+.md-sidebar--primary .md-nav {
+    padding-left: 1.2rem;
+}
