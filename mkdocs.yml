@@ -1,0 +1,46 @@
+site_name: 人间无事人
+
+theme:
+  name: material
+  language: zh
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.top
+    - toc.integrate
+    - content.code.copy
+
+nav:
+  - 首页: index.md
+  - HPC:
+      - 总览: hpc/index.md
+  - SGC-MoE:
+      - 总览: moe/index.md
+  - Cheatsheet:
+      - 总览: cheatsheet/index.md
+  - Learnings:
+      - DL Systems: learnings/dl_systems.md
+      - Leet Code: learnings/leetcode.md
+      - Transformers: learnings/transformers.md
+  - 围棋:
+      - 总览: go/index.md
+  - 羽毛球:
+      - 总览: badminton/index.md
+
+markdown_extensions:
+  - admonition
+  - footnotes
+  - toc:
+      permalink: true
+  - codehilite
+  - pymdownx.arithmatex
+  - pymdownx.highlight
+  - pymdownx.superfences
+  - pymdownx.details
+  - pymdownx.tasklist
+
+extra_javascript:
+  - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
+
+extra_css:
+  - assets/stylesheets/background.css
